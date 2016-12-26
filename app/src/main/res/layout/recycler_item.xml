@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="16sp">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+
+
+
+        "
+        android:id="@+id/BACKGROUND_TV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/RV_img"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:src="@mipmap/ic_launcher"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="MOVIE NAME"
+        android:textColor="#2E7D32"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:id="@+id/RI_MOVIE_NAME"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/RV_img"
+        android:layout_toStartOf="@+id/RV_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1sp"
+        android:text="rating"
+        android:textColor="#2E7D32"
+        android:id="@+id/RI_RATING"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_below="@+id/RI_MOVIE_NAME"
+        android:layout_toRightOf="@+id/RI_YEAR"
+        android:layout_toEndOf="@+id/RI_YEAR" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2E7D32"
+        android:padding="1sp"
+        android:text="Year"
+
+        android:id="@+id/RI_YEAR"
+        android:layout_below="@+id/RI_MOVIE_NAME"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+
+</RelativeLayout>

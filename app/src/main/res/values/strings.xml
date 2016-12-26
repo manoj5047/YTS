@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">IMDB2</string>
+    <string name="genre_prompt">choose a genre</string>
+    <string-array name="genre_arrays">
+        <item>Genres</item>
+        <item>All</item>
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Aniamtion</item>
+        <item>Biography</item>
+        <item>Comedy</item>
+        <item>Crime</item>
+        <item>Documentary</item>
+        <item>Drama</item>
+        <item>Family</item>
+        <item>Fantasy</item>
+        <item>Film-Noir</item>
+        <item>Game-Show</item>
+        <item>History</item>
+        <item>Horror</item>
+        <item>Music</item>
+        <item>Musical</item>
+        <item>Mystery</item>
+        <item>News</item>
+        <item>Reality-Tv</item>
+        <item>Romance</item>
+        <item>Sci-Fi</item>
+        <item>Sport</item>
+        <item>Talk-Show</item>
+        <item>Thriller</item>
+        <item>War</item>
+        <item>Western</item>
+    </string-array>
+    <string name="order_prompt">Order By</string>
+    <string-array name="order_array">
+        <item>Order by</item>
+        <item>asc</item>
+        <item>desc</item>
+    </string-array>
+    <string name="sort_prompt">Sort by</string>
+    <string-array name="sort_array">
+        <item>Sort By</item>
+        <item>title</item>
+        <item>year</item>
+    </string-array>
+</resources>

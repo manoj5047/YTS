@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:id="@+id/ACTIVITY_SETTINGS"
+    android1:layout_width="match_parent"
+    android1:layout_height="wrap_content"
+    android1:name="com.example.sayi.imdb2.QuickPreferenceActivity"/>

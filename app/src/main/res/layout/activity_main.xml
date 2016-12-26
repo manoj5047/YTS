@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25sp"
+    android:paddingLeft="25sp"
+    android:paddingRight="25sp"
+    android:layout_marginTop="1sp"
+   android:background="#fff"
+    android:backgroundTintMode="src_atop"
+    tools:context="com.example.sayi.imdb2.MainActivity">
+
+    <EditText
+        android:id="@+id/MA_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="YEAR"
+        android:textColorHint="#2E7D32"
+        android:textColor="#2E7D32"
+        android:layout_alignParentTop="true" />
+
+
+    <Spinner
+        android:id="@+id/MA_SPINNER_GENRE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/genre_arrays"
+        android:prompt="@string/genre_prompt"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#2E7D32"
+        android:layout_alignBaseline="@+id/MA_ET1"
+        android:layout_alignBottom="@+id/MA_ET1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+    </Spinner>
+
+    <Spinner
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MA_SPINNER2_ORDERBY"
+        android:layout_alignBaseline="@+id/MA_ET"
+        android:layout_alignBottom="@+id/MA_ET"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:prompt="@string/order_prompt"
+        android:entries="@array/order_array"
+        android:backgroundTint="#2E7D32"
+        android:layout_alignLeft="@+id/MA_SPINNER_GENRE"
+        android:layout_alignStart="@+id/MA_SPINNER_GENRE">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/MA_ET1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="IMDB RATING (0-9)"
+        android:textColor="#2e7d32"
+        android:layout_marginTop="11dp"
+        android:textColorHint="#2E7D32"
+        android:layout_below="@+id/MA_ET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/MA_SPINNER3_SORTBY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E7D32"
+        android:layout_alignBottom="@+id/MA_ET2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:foregroundTint="@color/colorPrimary"
+        android:prompt="@string/sort_prompt"
+        android:entries="@array/sort_array"
+        android:layout_alignLeft="@+id/MA_SPINNER_GENRE"
+        android:layout_alignStart="@+id/MA_SPINNER_GENRE">
+
+    </Spinner>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100sp"-->
+        <!--android:layout_below="@+id/MA_TV_URL_DISPLAY"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:id="@+id/scrollView2">-->
+        <!--<TextView-->
+            <!--android:id="@+id/MA_RV_RESULTS"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="JSON RESULT"-->
+            <!--android:textColor="#2E7D32"-->
+            <!--android:gravity="center"/>-->
+
+    <!--</ScrollView>-->
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignBottom="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/MA_ET2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="No. of pages"
+        android:textColorHint="#2E7D32"
+        android:textColor="#2E7D32"
+        android:layout_below="@+id/MA_ET1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Display Url"
+        android:textColor="#2E7D32"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColorHint="#2E7D32"
+        android:id="@+id/MA_TV_URL_DISPLAY"
+        android:layout_marginTop="105dp"
+        android:layout_below="@+id/MA_SPINNER3_SORTBY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/MA_ET_NAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Movie name"
+        android:textColorHint="#2e7d32"
+        android:textColor="#2e7d32"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/MA_SPINNER3_SORTBY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<Button-->
+        <!--android:id="@+id/MA_BT"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Search"-->
+        <!--android:textColorHint="#fff"-->
+        <!--android:background="#2E7D32"-->
+        <!--android:layout_marginBottom="14dp"-->
+        <!--android:layout_above="@+id/MA_BT2"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/MA_BT2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Go to Results"-->
+        <!--android:textColorHint="#fff"-->
+        <!--android:background="#2E7D32"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginBottom="15dp" />-->
+
+
+</RelativeLayout>

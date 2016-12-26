@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="CheckBox Setting"
+        android:title="Save Search History"
+        android:summaryOn="ON"
+        android:summaryOff="OFF"
+        android:defaultValue="true"/>
+    <MultiSelectListPreference
+        android:key="DEMO KEY"
+        android:negativeButtonText="Negative"
+        android:positiveButtonText="Positive"
+        android:summary="Multi Select Preference"/>
+    <Preference
+        android:persistent="true"
+        android:key="Preference key"
+        android:summary="Preference"/>
+</PreferenceScreen>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_selected_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sayi.imdb2.SelectedResult">
+
+    <TextView
+        android:id="@+id/FV_TV_TITLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="title"
+        android:background="#2e7d32"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:layout_below="@+id/RA_LARGE_BG"
+        android:textColor="#fff"
+        android:layout_marginTop="0sp"
+        android:layout_marginBottom="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/RA_LARGE_BG"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="#2e7d32"
+        android:layout_marginTop="1sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/FV_TV_URL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:textSize="15sp"
+        android:paddingLeft="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14sp"
+        android:layout_marginRight="14sp"
+        android:layout_marginTop="14sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#2E7D32"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4"
+        android:layout_below="@+id/FV_TV_IMDB"
+        android:layout_toRightOf="@+id/FV_TV_IMDB"
+        android:layout_toEndOf="@+id/FV_TV_IMDB"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp">
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:layout_marginTop="390sp"
+
+        >
+    <TextView
+        android:id="@+id/Summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:gravity="fill"
+        android:padding="25sp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/FV_TV_URL"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </ScrollView>
+
+    <TextView
+        android:paddingLeft="15sp"
+        android:id="@+id/FV_TV_IMDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rating"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/FA_TV_DURATION"
+        android:layout_alignStart="@+id/FA_TV_DURATION"
+        android:layout_below="@+id/FV_TV_TITLE" />
+
+    <TextView
+        android:id="@+id/FA_TV_DURATION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:textSize="15sp"
+        android:layout_below="@+id/scrollView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/RTV_SUMMARY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_below="@+id/FA_TV_DURATION"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="1dp"
+        android:padding="2sp"
+        android:background="#2E7D32"/>
+
+    <TextView
+        android:id="@+id/FV_TV_LANGUAGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:textSize="15sp"
+        android:layout_below="@+id/FV_TV_TITLE"
+        android:layout_alignRight="@+id/FV_TV_URL"
+        android:layout_alignEnd="@+id/FV_TV_URL" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:padding="10sp"
+        android:id="@+id/FV_TV_YEAR"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@+id/FV_TV_IMDB"
+        android:layout_alignBottom="@+id/FV_TV_IMDB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/FIMG_SMALL_IMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="20sp"
+        android:layout_above="@+id/FV_TV_TITLE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp" />
+</RelativeLayout>
+
+
